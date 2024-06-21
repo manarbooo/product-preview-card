@@ -1,0 +1,134 @@
+:root{
+    --Dark_cyan : hsl(158, 36%, 37%);
+    --Cream : hsl(30, 38%, 92%); 
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 14px;
+    background-color: var(--Cream);
+      
+}
+
+.container{
+    width: 550px;
+    height: 370px;
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.productImage{
+    width: 275px;
+    height: 370px;
+
+}
+
+.productImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.productDescDiv{
+    width: 275px;
+    height: 370px;
+    
+
+}
+
+.productType{
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 13px;
+    font-family: Montserrat ,sans-serif;
+    font-weight: 600;
+    color: var(--Dark_grayish_blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.productBrand{
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    font-family: Fraunces, sans-serif;
+    margin-bottom: 10px;
+}
+
+.productDesc{
+    margin-left: 20px;
+    line-height: 1.5;
+    font-family: Montserrat ,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Dark_grayish_blue);
+    margin-top: 20px;
+}
+
+.priceDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    font-family: Fraunces, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: var(--Dark_cyan);
+    margin-left: 20px;
+}
+
+.oldPrice{
+    font-family: Montserrat ,sans-serif;
+    color: var(--Dark_grayish_blue);
+    font-weight: 450;
+    margin-right: 80px;
+    text-decoration: line-through;
+}
+
+.addToCart{
+    width: 220px;
+    height: 40px;
+    color: var(--White);
+    background-color: var(--Dark_cyan);
+    margin-left: 20px;
+    border-radius: 5px;
+    font-family: Montserrat ,sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.addToCart span{
+    margin-right: 55px;
+
+}
+
+.addToCart img{
+    margin-left: 45px;
+}
+
+.addToCart:hover{
+    background-color: hsl(158, 58%, 24%);
+    cursor: pointer;
+}
